@@ -1,0 +1,27 @@
+body {
+	background-color: #F2F5F7;
+	font-family: 'Open Sans', Arial, sans-serif;
+}
+
+.container {
+	/*Valido para todos os containers dentro das sections*/
+	width: 94%;
+	margin: 0 auto;
+}
+
+.subtitulo {
+	font-weight: bold;
+	font-size: 32px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+@media(min-width: 768px) {
+	.container {
+		width: 85%;
+	}
+
+	.subtitulo {
+		text-align: left;
+	}
+}

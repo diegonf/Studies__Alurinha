@@ -1,0 +1,162 @@
+.conteudoPrincipal {
+  margin-top: 20px;
+}
+
+.conteudoPrincipal-cursos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.conteudoPrincipal-cursos-link {
+  background-color: #FFF;
+  box-shadow: 2px 2px 2px #CCC;
+  height: 100px;
+  position: relative;
+  text-align: center;
+  transition: .3s;
+  width: 23%;
+}
+
+.conteudoPrincipal-cursos-link:hover {
+  box-shadow: 4px 4px 4px #CCC;
+}
+
+.conteudoPrincipal-cursos-link:nth-child(4n) {
+  margin-right: 0;
+}
+
+.conteudoPrincipal-cursos-link:nth-child(4n+1) {
+  margin-left: 0;
+}
+
+.conteudoPrincipal-cursos-link:nth-child(even) a:before {
+  background: url(../img/background1.svg) no-repeat;
+}
+
+.conteudoPrincipal-cursos-link:nth-child(odd) a:before {
+  background: url(../img/background2.svg) no-repeat;
+}
+
+.conteudoPrincipal-cursos-link a {
+  color: #000;
+  display: block;
+  font-weight: bold;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  text-decoration: none;
+  top: 0;
+  width: 100%;
+}
+
+.conteudoPrincipal-cursos-link a:before {
+  content: '';
+  display: block;
+  height: 50px;
+  margin: 10px auto;
+  width: 50px;
+}
+
+.videoSobre {
+  background-color: #5E9EDC;
+  padding: 25px 0;
+}
+
+.videoSobre .container {
+  color: #FFF;
+  display: flex;
+}
+
+.videoSobre-video {
+  flex-grow: 1;
+  flex-shrink: 2;
+  max-width: 90%;
+}
+
+.videoSobre-sobre {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 2;
+  font-size: 1.2rem;
+  line-height: 2;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.videoSobre-sobre-title {
+  font-size: 1.2em;
+  font-weight: bolder;
+}
+
+.videoSobre-sobre-list {
+  flex-grow: 1;
+}
+
+.videoSobre-button {
+  background-color: #ec6e5a;
+  border: none;
+  border-radius: 8px;
+  color: #FFF;
+  display: block;
+  font-size: .8em;
+  height: 50px;
+}
+.videoSobre-button:hover {
+  cursor: pointer;
+}
+
+@media(max-width: 768px) {
+  .conteudoPrincipal-cursos-link {
+    flex-direction: column;
+    margin: 0.5rem 0;
+    width: 100%;
+  }
+
+  .videoSobre .container {
+    flex-direction: column;
+  }
+
+  .videoSobre-video {
+    margin: 0 auto;
+  }
+}
+
+@media(min-width: 768px) {
+  .conteudoPrincipal-cursos-link {
+    margin: 1%;
+  }
+  .conteudoPrincipal-cursos-link a {
+    font-size: 70%;
+  }
+}
+
+@media(min-width: 1000px) {
+  .conteudoPrincipal-cursos-link{
+    margin: 1.333%;
+  }
+
+  .conteudoPrincipal-cursos-link:nth-child(3n) {
+    margin-right: 1.33%;
+  }
+
+  .conteudoPrincipal-cursos-link:nth-child(3n+1) {
+    margin-left: 1.333%;
+  }
+
+  .conteudoPrincipal-cursos-link:nth-child(4n) {
+    margin-right: 0;
+  }
+
+  .conteudoPrincipal-cursos-link:nth-child(4n+1) {
+    margin-left: 0;
+  }
+
+  .conteudoPrincipal-cursos-link a {
+    font-size: 100%;
+  }
+
+  .videoSobre-sobre {
+    margin-left: 1.5em;
+  }
+}

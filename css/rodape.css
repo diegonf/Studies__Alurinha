@@ -1,0 +1,137 @@
+.rodapePrincipal {
+  background-color: #324C64;
+  padding-top: 20px;
+}
+
+.rodapePrincipal .subtitulo {
+  color: #FFF;
+}
+
+.rodapePrincipal-navMap-list {
+  display: flex;
+  flex-flow: column wrap;
+  height: 255px;
+}
+
+.navmap-list-title {
+  font-weight: 700;
+  font-size: 1.3em;
+  margin: .9em 0;
+  padding-bottom: .2em;
+  padding-left: .3em;
+  padding-top: .2em;
+}
+
+.navmap-list-title-bancoDeDados {
+  border-left: 4px solid #EC6E5A;
+  color: #EC6E5A;
+}
+
+.navmap-list-title-framework {
+  border-left: 4px solid #AD85BF;
+  color: #AD85BF;
+}
+
+.navmap-list-title-frontend {
+  border-left: 4px solid #5EC6F3;
+  color: #5EC6F3;
+}
+
+.navmap-list-title-backend {
+  color: #25D285;
+  border-left: 4px solid #25D285;
+}
+
+.navmap-list-title+.rodapePrincipal-navMap-link {
+  margin-top: 0;
+}
+
+.rodapePrincipal-navMap-link {
+  color: #FFF;
+  font-size: .9em;
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+.rodapePrincipal-patrocinadores {
+  background: #F2F5F7;
+  margin-top: 30px;
+  padding: 20px 0;
+}
+
+.rodapePrincipal-patrocinadores .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rodapePrincipal-patrocinadores-list {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  margin-right: 5%;
+  width: 70%;
+}
+
+.rodapePrincipal-contatoForm {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.rodapePrincipal-contatoForm legend[for=email-contato] {
+  color: #000;
+  display: block;
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.rodapePrincipal-contatoForm-fieldset {
+  display: flex;
+}
+
+.rodapePrincipal-contatoForm-emailInput {
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  padding: 10px;
+}
+
+.rodapePrincipal-contatoForm-submit {
+  background-color: #4DBA7A;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  color: #FFF;
+  cursor: pointer;
+  margin-left: 0.5rem;
+}
+
+.rodapePrincipal-contatoForm-submit,
+.rodapePrincipal-contatoForm-emailInput {
+  outline: 0;
+  border: 1px solid #4DBA7A;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+
+@media(max-width: 768px) {
+  .rodapePrincipal-navMap-list {
+    height: auto;
+  }
+  
+  .rodapePrincipal-patrocinadores .container {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .rodapePrincipal-patrocinadores-list {
+    margin: o;
+    width: 100%;
+  }
+}
+
+@media(min-width: 768px) {
+  .rodapePrincipal-contatoForm {
+    margin-top: 0;
+    text-align: left;
+  }
+}

@@ -1,6 +1,6 @@
 ## <p align="center">![logo da Alura](./img/logos/logo.jfif)<br>Alurinha</p>
 
-* Projeto: https://diegonf.github.io/Studies__Alurinha/
+* Projeto: https://diegonf.github.io/Studies__FrontEnd__Alurinha/
 * Curso: Flexbox: posicione elementos na tela!
 * Instituição: [Alura](https://www.alura.com.br)
 
